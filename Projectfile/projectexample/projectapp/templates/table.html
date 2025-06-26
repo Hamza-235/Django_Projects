@@ -1,0 +1,9 @@
+{% if menu %}
+{% for items in menu%}
+<table style="border: 2px solid black;">
+<tr>
+<td style="border: 1px solid black;"><p>{{items.car_name}}:{{items.cost}} : {{items.engine}} : {{items.model_id}} : {{items.time}} </p></td>
+</tr>
+</table>
+{% endfor  %}
+{%endif%}

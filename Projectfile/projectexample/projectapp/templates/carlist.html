@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of car's in my showroom
+         </title>
+</head>
+<body>
+    <h1>All Cars
+    </h1>
+    <table border="1">
+        <tr>
+            <th> Car name</th>
+            <th>Price</th>
+            <th>Engine</th>
+        </tr>
+        {% for Carlist in carr %}
+        <tr>
+            <td>{{Carlist.carlist_name}}
+
+            </td>
+            <td>{{Carlist.cost}}
+
+            </td>
+            <td>{{Carlist.engine}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>
